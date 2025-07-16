@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ideas - Suitmedia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container">
+        <div class="header-content">
+          <a href="#" class="logo">
+            <div class="logo-icon">S</div>
+            <span>Suitmedia</span>
+          </a>
+          <nav class="nav">
+            <a href="#work">Work</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#ideas" class="active">Ideas</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Banner -->
+    <section class="banner" id="banner">
+      <div class="banner-bg" id="bannerBg"></div>
+      <div class="banner-content" id="bannerContent">
+        <h1>Ideas</h1>
+        <p>Where all our great things begin</p>
+      </div>
+      <div class="banner-diagonal"></div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Controls -->
+        <div class="controls">
+          <div class="status-text" id="statusText">Showing 1 - 10 of 100</div>
+          <div class="control-group">
+            <div class="control-item">
+              <label for="itemsPerPage">Show per page:</label>
+              <div class="select-wrapper">
+                <select id="itemsPerPage">
+                  <option value="10">10</option>
+                  <option value="20">20</option>
+                  <option value="50">50</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-item">
+              <label for="sortBy">Sort by:</label>
+              <div class="select-wrapper">
+                <select id="sortBy">
+                  <option value="-published_at">Newest</option>
+                  <option value="published_at">Oldest</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ideas Grid -->
+        <div class="ideas-grid" id="ideasGrid">
+          <!-- Ideas will be populated here -->
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" id="pagination">
+          <!-- Pagination will be populated here -->
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
